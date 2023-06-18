@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="contactt.css">
+</head>
+<body>
+     <header>
+          <nav class="nav1">        
+               <a href="index.html" class="logo">FK</a>
+               <span class="company-name">KnownFreak</span>
+          </nav>
+
+          <nav class="nav2">
+               <a href="contact.html" class="contact1">Contact us</a>
+
+               <div class="toggle-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+               </div>
+
+               <div class="menu">
+                    <div class="data">
+                         <ul>
+                         <li class="header">Navigation</li><br>
+                         <li id="menu-item"><a href="#" style="text-decoration: none; color: transparent;  -webkit-text-stroke: 1px #fff; font-size: 50px; transition: color 0.3s; font-family: 'Lexend Deca', sans-serif; line-height: 2em; font-weight: 900; :hover {
+color: yellow;
+-webkit-text-stroke: 3px #000;
+}">Home</a></li>
+                         <li id="menu-item"><a href="#" style="text-decoration: none; color: transparent; border: 3px solid #fff; font-size: 50px; transition: color 0.3s;">Our Story</a></li>
+                         <li id="menu-item"><a href="#" style="text-decoration: none; color: transparent; border: 3px solid #fff; font-size: 50px; transition: color 0.3s;">Services</a></li>
+                         <li id="menu-item"><a href="#" style="text-decoration: none; color: transparent; border: 3px solid #fff; font-size: 50px; transition: color 0.3s;">Contact</a></li>
+                    </ul>
+                    </div>
+               </div>
+          </nav>
+     </header>
+
+<!-- ************************** -->
+<section class="secc-1">
+     <form>
+       <div class="left-form">
+         <div>
+           <label for="">What's your Fullname?</label><br>
+           <input type="text" placeholder="Type your name here" onfocus="if (this.placeholder == 'Type your name here') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Type your name here';}">
+         </div>
+         <!-- <div>
+           <label for="">What's your Email Address?</label><br>
+           <input type="text" placeholder="Type your email here" onfocus="if (this.placeholder == 'Type your email here') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Type your email here';}">
+           <span><img src="Contact_svgs\sms.svg" alt="" srcset=""></span>
+         </div> -->
+         <div style="position: relative;">
+          <label for="">What's your Email Address?</label><br>
+          <input type="text" placeholder="Type your email here" onfocus="if (this.placeholder == 'Type your email here') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Type your email here';}">
+          <span style="position: absolute; right: 15px; top: 50%; transform: translateY(38%);">
+              <img src="Contact_svgs\sms.svg" alt="" srcset="">
+          </span>
+      </div>
+        
+
+      <div style="position: relative;">
+          <label for="">What's your Phone Number?</label><br>
+          <input type="text" placeholder="Type your Phone Number here" onfocus="if (this.placeholder == 'Type your Phone Number here') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Type your email here';}">
+          <span style="position: absolute; right: 15px; top: 50%; transform: translateY(38%);">
+              <img src="Contact_svgs\call.svg" alt="" srcset="">
+          </span>
+      </div>
+      <div style="position: relative;">
+          <label for="">Book Your Slot:</label>
+          <!-- <input type="text" placeholder="Type your Slot here" onfocus="if (this.placeholder == 'Type your Slot here') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Type your email here';}">
+          <span style="position: absolute; right: 15px; top: 50%; transform: translateY(38%);">
+              <img src="Contact_svgs\calendar-edit.svg" alt="" srcset="">
+          </span> -->
+      </div>
+      <div class="datee">
+          <div>
+            <label for="">Date</label>
+          </div>
+          <div>
+            <label for="" style="left: 236px;">Time</label>
+          </div>
+        </div>
+        <div class="datee">
+          <br>
+          <div>
+            <input type="date" style="width: 218px;" placeholder="dd/mm/yyyy">
+          </div>
+          <div>
+            <input type="time" style="width: 218px; position: relative; left: 64px;">
+          </div>
+        </div>
+
+        
+         <div>
+           <label for="">What's your Company Name?</label><br>
+           <input type="text" placeholder="Type your company name here" onfocus="if (this.placeholder == 'Type your company name here') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Type your company name here';}">
+         </div>
+         <div style="position: relative;">
+          <label for="">Your Business Website?</label><br>
+          <input type="text" placeholder="Type Your Website URL Here" onfocus="if (this.placeholder == 'Type Your Website URL Here') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Type your email here';}">
+          <span style="position: absolute; right: 15px; top: 50%; transform: translateY(38%);">
+              <img src="Contact_svgs\global.svg" alt="" srcset="">
+          </span>
+      </div>
+   
+         <div class="big-text">
+           <label for="">Your requirements? (optional)</label><br>
+           <textarea name="" id="" cols="30" rows="10" placeholder="Your Message here"></textarea>
+         </div>
+         <div>
+           <button class="btn">
+             Send <span class="sendsvg"><img src="Contact_svgs\send-2.svg" alt="" srcset=""></span>
+           </button>
+         </div>
+       </div>
+     </form>
+
+   <div class="anim-space">
+     <div class="anim-img">
+          <img src="animation_500_lh3p4q7x.gif" alt="">
+     </div>
+   </div>
+   
+   
+   
+   
+   </section>
+   
+
+
+
+
+
+
+
+
+
+
+<!-- *************************** -->
+<section>
+     <div class="sec-7">
+          <div class="footleft">
+               <div class="smtext">
+                    You've Come this far.
+               </div>
+               <div class="lgtext">
+                    Let's Connect!
+               </div>
+          </div>
+          <div class="footright">
+               <div class="whatsapp">
+                    <img src="Contact\Whatsapp.png" alt="" class="con1">
+                    Text us on Whatsapp <br><br>
+               </div>
+               <div class="phoneno">
+                    <img src="Contact\Phone.png" alt="" class="con2">
+                    +91 955596954 <br><br>
+               </div>
+               <div class="gmaill">
+                    <img src="Contact\Gmail.png" alt="" class="con3">
+                    Team@knownfreaks.com
+               </div>
+          </div>
+     </div>
+     <div class="midsect">
+     <div class="quicksm">
+          Quick Links <br><br>
+     </div>
+     <div class="redirectsm">
+          <img src="ql\Facebookk.svg" alt="">
+          <img src="ql\Instagramm.svg" alt="">
+          <img src="ql\linkedinn.svg" alt="">
+     </div>
+     </div>
+     </section>
+     
+     
+     
+     
+     
+     <!-- <section>
+          <div class="left-mo">
+               <span class="sm-moo">
+                    you've come this far
+               </span>
+               <span class="lg-moo">
+                    let's Coneect
+               </span>
+               <div class="right-mo">
+                    <span class="whatsapps">
+                         <div>
+                         <img src="Contact\Whatsapp.png" alt="" class="con1">
+                         Text us on Whatsapp <br><br></div>
+                    </span>
+                    <span class="phonenos">
+                         <img src="Contact\Phone.png" alt="" class="con2">
+                         +91 955596954 <br><br>
+                    </span>
+                    <span class="gmaills">
+                         <img src="Contact\Gmail.png" alt="" class="con3">
+                         Team@knownfreaks.com
+                    </span>
+               </div>
+          </div>
+     </section> -->
+     
+     
+     <section id="Only-for-mobile">
+          <div class="left-mo">
+               <div>
+            <span class="sm-moo">
+               You've Come this far. <br>
+            </span>
+            <span class="lg-moo">
+               Let's Connect! <br><br>
+            </span>
+          </div>
+            <div class="right-mo">
+              <span class="whatsapps">
+                <div class="con">
+                  <img src="Contact\Whatsapp.png" alt="" class="con1">
+                  <span>Text us on Whatsapp</span>
+                </div>
+              </span>
+              <span class="phonenos">
+                <div class="con">
+                  <img src="Contact\Phone.png" alt="" class="con2">
+                  <span>+91 955596954</span>
+                </div>
+              </span>
+              <span class="gmaills">
+                <div class="con">
+                  <img src="Contact\Gmail.png" alt="" class="con3">
+                  <span>Team@knownfreaks.com</span>
+                </div>
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="for-mobiles">
+          <div class="midse">
+               <div class="quicksm">
+                    Quick Links <br><br>
+               </div>
+               <div class="redirectsm">
+                    <img src="ql\Facebookk.svg" alt="">
+                    <img src="ql\Instagramm.svg" alt="">
+                    <img src="ql\linkedinn.svg" alt="">
+               </div>
+               </div>
+        </section>
+        
+     
+     
+     
+     
+     <footer>
+          <div class="footlogo">
+          <img src="Footer\Fkbig.svg" alt="" class="backlogo">
+          <div class="logo-container">
+               <img src="Footer\Fksm.svg" alt="" class="lastLogo"><br>
+          </div>
+          <div class="lasconame">
+               knownfreaks
+          </div>
+          <div>
+               <button class="lastbtn">
+                    I have a requirement
+               </button>
+          </div>
+     </div>
+     </footer>
+ <!-- **************************** -->
+   <script>
+
+var t1 = new TimelineMax({paused: true});
+     
+     t1.to(".one", 0.8, {
+          y: 6,
+          rotation: 45,
+          ease: Expo.easeInOut
+     });
+     t1.to(".two", 0.8, {
+          y: -6,
+          rotation: -45,
+          ease: Expo.easeInOut,
+          delay: -0.8
+     });
+     
+     t1.to(".menu", 2, {
+          top: "0%",
+          ease: Expo.easeInOut,
+          delay: -2
+     });
+     
+     t1.staggerFrom(".menu ul li", 2, {x: -200, opacity: 0, ease:Expo.easeOut}, 0.3);
+     
+     t1.reverse();
+     $(document).on("click", ".toggle-btn", function() {
+          t1.reversed(!t1.reversed());
+     });
+     $(document).on("click", "a", function() {
+          t1.reversed(!t1.reversed());
+     });
+
+//FOR PLACEHOLDER
+// const inputFields = document.querySelectorAll("input, textarea");
+
+//     inputFields.forEach((field) => {
+//       field.addEventListener("focus", () => {
+//         field.placeholder = "";
+//       });
+
+//       field.addEventListener("blur", () => {
+//         field.placeholder = field.getAttribute("placeholder");
+//       });
+//     });
+   </script>
+</body>
+</html>
